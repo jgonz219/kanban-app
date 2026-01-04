@@ -1,2 +1,40 @@
 @import "tailwindcss";
 
+@theme {
+  --color-tokyonight-bg: #1A1B26;
+  --color-tokyonight-black: #15161E;
+  --color-tokyonight-grey: #414868;
+  --color-tokyonight-red: #F7768E;
+  --color-tokyonight-green: #9ECE6A;
+  --color-tokyonight-yellow: #E0AF68;
+  --color-tokyonight-blue: #7AA2F7;
+  --color-tokyonight-purple: #BB9AF7;
+  --color-tokyonight-lightblue: #7DCFFF;
+  --color-tokyonight-white: #C0CAF5;
+  --color-tokyonight-lightgrey: #A9B1D6;
+}
+
+@layer components {
+  .card {
+    padding: calc(var(--spacing) * 4);
+    background-color: var(--color-tokyonight-grey);
+  }
+
+  .column {
+    color: var(--color-tokyonight-white);
+    padding: calc(var(--spacing) * 4);
+    margin: calc(var(--spacing) * 4);
+    background-color: var(--color-tokyonight-black);
+  }
+
+  .button {
+    color: var(--color-tokyonight-black);
+    margin: calc(var(--spacing) * 1);
+    padding: calc(var(--spacing) *1);
+    background-color: var(--color-tokyonight-blue);
+  }
+}
+
+body {
+  background-color: var(--color-tokyonight-green);
+}
